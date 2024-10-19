@@ -1,7 +1,7 @@
 import { test } from "@playwright/test";
 
 test("locators", async ({ page }) => {
-    await page.goto("https://team8-2022brno.herokuapp.com/registrace");
+    await page.goto ("https://team8-2022brno.herokuapp.com/registrace");
         //Meno a priezvisko: 
         await page.locator ("#name");
         await page.locator (".form - control");
