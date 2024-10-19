@@ -1,5 +1,6 @@
 import { test } from "@playwright/test";
 
+<<<<<<< HEAD
 test("locators", async ({ page }) => {
     await page.goto ("https://team8-2022brno.herokuapp.com/registrace");
         //Meno a priezvisko: 
@@ -31,3 +32,13 @@ test("locators", async ({ page }) => {
 });
 
         
+=======
+test("registrace", async ({ page }) => {
+    await page.goto("https://team8-2022brno.herokuapp.com/registrace");
+    await page.title()
+    console.log(await page.title());
+    await page.screenshot()
+    await page.screenshot({ path: "screenshot.png" });
+  
+  });
+>>>>>>> 3d162cfb12be3d45db789fe0726306d9db42ba61
